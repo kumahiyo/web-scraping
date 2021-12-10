@@ -4,6 +4,7 @@
 ### Purpose
 
 This is a docker environment for a web scraping project, which uses python and selenium, scrapy.
+The docker environment contains firefox and geckodriver, pandas, openpyxl, xlrd, xlwt.
 
 ### Instruction
 
