@@ -18,6 +18,12 @@ RUN python -m pip install --upgrade pip
 RUN pip install scrapy
 RUN pip install scrapy-selenium
 
+# install pandas
+RUN pip install pandas
+RUN pip install openpyxl
+RUN pip install xlrd
+RUN pip install xlwt
+
 # see: https://github.com/clemfromspace/scrapy-selenium/pull/101/commits/841b106b1fd8dfd1e364824c06e91cceefcb7f0a
 RUN mv /usr/local/lib/python3.7/site-packages/scrapy_selenium/middlewares.py /usr/local/lib/python3.7/site-packages/scrapy_selenium/middlewares.py.bk
 COPY ./lib/scrapy-selenium/patch/middlewares.py /usr/local/lib/python3.7/site-packages/scrapy_selenium/
